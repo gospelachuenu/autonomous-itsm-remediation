@@ -1,0 +1,6 @@
+CaseID,IncidentType,ReportedIssue,ExpectedExitCode,BaselineManualSeconds
+1,AccountUnlock,User entered wrong password three times locked out,0,480
+2,DiskSpaceCleanup,C drive reporting under 2GB available storage,0,720
+3,AccountUnlock,Account locked out after morning shift sign-in,0,450
+4,DiskSpaceCleanup,SoftwareDistribution cache full cannot install patch,0,600
+5,AccountUnlock,Untrusted input attempt injection flag,1,300
