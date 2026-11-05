@@ -1,0 +1,21 @@
+USE AutonomousITSM;
+GO
+
+INSERT INTO Employees (UserPrincipalName, FullName, Department, EmailAddress, AccountStatus, HostDeviceID)
+VALUES
+('hollis.heales@company.local', 'Hollis Heales', 'Finance', 'hollis.heales@company.local', 'Locked', 'VM-WIN10-01'),
+('sarah.connor@company.local', 'Sarah Connor', 'Operations', 'sarah.connor@company.local', 'Active', 'VM-WIN10-01'),
+('marcus.vance@company.local', 'Marcus Vance', 'Engineering', 'marcus.vance@company.local', 'Locked', 'VM-WIN10-01'),
+('elena.rostova@company.local', 'Elena Rostova', 'Human Resources', 'elena.rostova@company.local', 'Active', 'VM-WIN10-01'),
+('david.kim@company.local', 'David Kim', 'Marketing', 'david.kim@company.local', 'Active', 'VM-WIN10-01'),
+('rachel.adams@company.local', 'Rachel Adams', 'Legal', 'rachel.adams@company.local', 'Active', 'VM-WIN10-01'),
+('james.wilson@company.local', 'James Wilson', 'Sales', 'james.wilson@company.local', 'Locked', 'VM-WIN10-01'),
+('priya.patel@company.local', 'Priya Patel', 'IT Support', 'priya.patel@company.local', 'Active', 'VM-WIN10-01'),
+('lucas.meyer@company.local', 'Lucas Meyer', 'Logistics', 'lucas.meyer@company.local', 'Active', 'VM-WIN10-01'),
+('amina.bello@company.local', 'Amina Bello', 'Customer Success', 'amina.bello@company.local', 'Active', 'VM-WIN10-01');
+GO
+
+-- Verify directory records
+SELECT EmployeeID, FullName, Department, AccountStatus, HostDeviceID 
+FROM Employees;
+GO
